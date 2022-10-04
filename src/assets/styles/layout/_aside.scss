@@ -1,0 +1,73 @@
+.aside {
+  background-color: $white;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  &__form {
+    width: 426px;
+    height: 820px;
+
+    background-color: $lightGrey3;
+    border: 1px solid $lightGrey4;
+    margin-left: 2.2rem;
+    @media ($tablet) {
+      width: 213px;
+      height: 410px;
+    }
+    &-title {
+      @include h3($dark2);
+      margin-top: 3rem;
+      margin-left: 2.8rem;
+      @media ($tablet) {
+        margin-top: 1.5rem;
+        margin-left: 1.4rem;
+      }
+    }
+    &-input {
+      @extend %input;
+      margin-top: 3rem;
+      margin-left: 2.6rem;
+      @media ($tablet) {
+        margin-top: 1.5rem;
+        margin-left: 1.3rem;
+      }
+    }
+    &-select {
+      @extend %select;
+      margin-top: 3rem;
+      margin-left: 2.6rem;
+      @media ($tablet) {
+        margin-top: 1.5rem;
+        margin-left: 1.3rem;
+      }
+    }
+    &-btn {
+      @extend %btn;
+      margin-top: 3.6rem;
+      margin-left: 2.6rem;
+      @media ($tablet) {
+        margin-top: 1.8rem;
+        margin-left: 1.3rem;
+      }
+    }
+  }
+  &__title {
+    @include h3($dark2);
+    margin-top: 2.5rem;
+    margin-left: 2.3rem;
+  }
+  &__text {
+    @include p5($grey9, 1.67);
+    margin-top: 0.6rem;
+    margin-left: 2.3rem;
+    width: 416px;
+    @media ($tablet) {
+      width: 208px;
+    }
+  }
+  &__link {
+    @include a2();
+    display: inline-block;
+    margin-top: 0.4rem;
+    margin-left: 2.3rem;
+  }
+}

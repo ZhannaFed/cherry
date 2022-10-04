@@ -1,0 +1,58 @@
+.footer {
+  background-image: url("../images/footer.png");
+  // object-fit: cover;
+  background-size: cover;
+  .container {
+    height: 562px;
+    display: flex;
+    gap: 35px;
+    @media ($tablet) {
+      height: 281px;
+      gap: 75px;
+    }
+  }
+  &__hours {
+    margin-left: 8px;
+  }
+  &__title {
+    @include h3();
+    font-family: $mainFont;
+    margin-top: 4rem;
+    margin-bottom: 0.9rem;
+    p {
+      @include firstLetter();
+      display: inline-block;
+    }
+  }
+  &__text {
+    @include p5($grey4, normal);
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+  }
+  &__line1 {
+    width: 270px;
+    height: 1px;
+    background-color: $dark4;
+  }
+  &__line2 {
+    width: 270px;
+    height: 1px;
+    background-color: $dark1;
+  }
+  &__freeCall {
+    @include p3();
+    margin-top: 1.2rem;
+    margin-left: 0.2rem;
+  }
+  &__link {
+    @include a2($red1, normal);
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .openHoursList {
+    margin-top: 1.2rem;
+  }
+  .phoneList {
+    margin-top: 1.2rem;
+  }
+}

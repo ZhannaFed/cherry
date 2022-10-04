@@ -1,0 +1,13 @@
+.phoneList {
+  padding-left: 15px;
+  .phoneList__item {
+    color: $red3;
+    font-family: $mainFont;
+    font-size: 1.2rem;
+    line-height: normal;
+    margin-bottom: 9px;
+  }
+  .phoneList__item > span {
+    @include p5($grey4, normal);
+  }
+}
