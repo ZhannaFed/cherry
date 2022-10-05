@@ -1,0 +1,46 @@
+.top__header {
+  background: linear-gradient(to top, #273131, #393a44);
+  height: 200px;
+  @media ($tablet) {
+    height: 72px;
+  }
+  .top__header-text h1 {
+    @include logo();
+    margin-top: 2.5rem;
+    margin-left: 0.9rem;
+  }
+  .top__header-text p {
+    @include p2();
+    margin-left: 0.8rem;
+  }
+  .top__header-actionsField {
+    @extend %input__search;
+  }
+  .top__header-actionsBtn {
+    @extend %btn__search;
+    margin: 0 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    @media ($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .top__header-actions {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    @media ($tablet) {
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+}

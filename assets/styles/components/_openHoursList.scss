@@ -1,0 +1,13 @@
+.openHoursList {
+  margin-left: 7px;
+  .openHoursList__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+  .openHoursList__item > .p5 {
+    @include p5($grey4, normal);
+    margin-left: 9px;
+  }
+}

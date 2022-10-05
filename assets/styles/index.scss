@@ -1,0 +1,39 @@
+@import "./utils";
+@import "./components";
+@import "./layout";
+body {
+  background-color: $lightGrey7;
+}
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: grid;
+  @media ($tablet) {
+    grid-template-columns: 1fr 256px 724px 1fr;
+  }
+}
+@media ($tablet) {
+  .top__header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  .header {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .stage {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .aside {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .footer {
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+}

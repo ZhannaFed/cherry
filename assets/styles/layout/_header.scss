@@ -1,0 +1,95 @@
+.header {
+  .header__review {
+    height: 450px;
+    background-color: $dark2;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: cover;
+    @media ($tablet) {
+      height: 240px;
+    }
+
+    &-title {
+      @include h1();
+      margin-left: 3.9rem;
+      margin-top: 4.9rem;
+    }
+    &-titleSubtext {
+      @include p1();
+      margin-left: 3.9rem;
+      margin-top: 0.4rem;
+    }
+    &-subtitle {
+      @include p1($grey1);
+      margin-left: 3.9rem;
+      margin-top: 1.8rem;
+    }
+    &-text {
+      @include p4($lightGrey5, 1.29);
+      width: 70%;
+      margin-left: 3.9rem;
+      margin-top: 0.9rem;
+      @media ($tablet) {
+        width: 484px;
+      }
+    }
+  }
+  .header__menu {
+    background-color: $red5;
+    height: 72px;
+    @media ($tablet) {
+      height: 36px;
+    }
+    &-list {
+      list-style: none;
+      height: 36px;
+      @include navLink();
+      display: none;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 5.1rem;
+      padding-inline-start: 0px;
+      margin-right: 2.1rem;
+      @media ($tablet) {
+        display: flex;
+      }
+    }
+    &-icon {
+      height: 72px;
+      margin-left: 2rem;
+      cursor: pointer;
+      @media ($tablet) {
+        display: none;
+      }
+    }
+  }
+  .header__submenu {
+    background-color: $lightGrey3;
+    height: 52px;
+    @media ($tablet) {
+      height: 26px;
+    }
+    span {
+      font-size: 2rem;
+      @media ($tablet) {
+        font-size: 1rem;
+      }
+    }
+    &-link {
+      @include a3();
+      display: inline-block;
+      margin-top: 0.2rem;
+      &:first-child {
+        margin-left: 2.4rem;
+      }
+    }
+    .active {
+      @include a3();
+      color: $grey7;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+}
