@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "arial-boldmt";
-  src: url("/arial-boldmt.1ae26ac7.woff2") format("woff2"), url("/arial-boldmt.cfcf42d8.woff") format("woff"), url("/arial-boldmt.b5e61ed2.ttf") format("truetype");
+  src: url("../arial-boldmt.10ca3592.woff2") format("woff2"), url("../arial-boldmt.cfcf42d8.woff") format("woff"), url("../arial-boldmt.b5e61ed2.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -94,7 +94,7 @@ h3 {
   -webkit-appearance: none;
   appearance: none;
   background-color: #e3e4e5;
-  background-image: url("/arrow.93e7044b.png");
+  background-image: url("./arrow.bf3fc176.png");
   background-repeat: no-repeat;
   background-position: right 1rem top 50%;
   background-size: 1rem auto;
@@ -149,7 +149,7 @@ h3 {
   width: 72px;
   height: 68px;
   background-color: #ae4b5d;
-  background-image: url("/search@2x.a9acf72d.png");
+  background-image: url("./search@2x.a9acf72d.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
@@ -168,7 +168,7 @@ h3 {
   .top__header .top__header-actionsBtn {
     width: 36px;
     height: 34px;
-    background-image: url("/search.a83fab15.png");
+    background-image: url("./search.a83fab15.png");
   }
 }
 
@@ -402,7 +402,7 @@ h3 {
 .header .header__review {
   height: 450px;
   background-color: #282d33;
-  background-image: url("/header.89283914.png");
+  background-image: url("./header.89283914.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1012,4 +1012,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=/styles.994762c1.css.map */
+/*# sourceMappingURL=./styles.994762c1.css.map */
